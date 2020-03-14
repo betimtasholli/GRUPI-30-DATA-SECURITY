@@ -114,3 +114,8 @@ int main() {
 
 	return 0;
 }
+
+/* credits: http://theflyingkeyboard.net/c/c-string-to-morse-code/ 
+            https://en.wikipedia.org/wiki/Morse_code      
+			https://www.youtube.com/watch?v=xsDk5_bktFo
+			*/
