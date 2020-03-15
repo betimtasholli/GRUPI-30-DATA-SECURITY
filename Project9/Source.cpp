@@ -4,12 +4,18 @@
 using namespace std;
 
 void encryptToMorseCode() {
-	const char shkronjat[37] = { ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
-	const string morseCode[37] = { "    ", ". ___", "___ . . .", "___ . ___ .", "___ . .", ".", ". . ___ .", "___ ___ .", ". . . .", ". .", ". ___ ___ ___", "___ . ___", ". ___ . .",  "___ ___", "___ .", "___ ___ ___", ". ___ ___ .", "___ ___ . ___", ". ___ .", ". . .", "_", ". . ___", ". . . ___", ". ___ ___", "___ . . ___", "___ . ___ ___", "___ ___ . .", ". ___ ___ ___ ___", ". . ___ ___ ___", ". . . ___ ___", ". . . . ___", ". . . . .", "___ . . . .", "___ ___ . . .", "___ ___ ___ . .", "___ ___ ___ ___ .", "___ ___ ___ ___ ___" };
+	const char shkronjat[37] = { ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+								 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+								 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
+	const string morseCode[37] = { "/", ".-", "-...","-.-.", "-..", ".", "..-.", "--.", "....",
+								   "..", ".---", "-.-", ".-..",  "--", "-.", "---", ".--.", "--.-",
+								   ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..",
+								   ".----", "..---", "...--", "....-", ".....", "-....", "--...",
+								   "---..", "----.", "-----" };
 	string textToChange = "";
 	string newText = "";
 
-	cout << "Shkruani tekstin qe doni ta shendrroni ne Morse Code: " << endl;
+	cout << "Shkruani Textin qe doni ta shendrroni ne Morse Code: ";
 	getline(cin, textToChange);
 	transform(textToChange.begin(), textToChange.end(), textToChange.begin(), ::tolower);
 	// ne kete rast funksioni transform i shenderron shkronjat e medha ne shkronja te vogla
@@ -18,41 +24,50 @@ void encryptToMorseCode() {
 		for (unsigned short j = 0; j < 37; j++) {
 			if (textToChange[i] == shkronjat[j]) {
 				newText += morseCode[j];
-				newText += "   ";
+				newText += " ";
 				break;
 			}
 		}
 	}
 
-	cout << "Kodi ne Morse Code: " << endl << newText;
-	int a;
-	cin >> a;
+	cout << "Mesazhi i enkriptuar: " << newText;
 }
 
 void decryptFromMorseCode() {
-	const char shkronjat[37] = { ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
-	const string morseCode[37] = { "    ", ". ___", "___ . . .", "___ . ___ .", "___ . .", ".", ". . ___ .", "___ ___ .", ". . . .", ". .", ". ___ ___ ___", "___ . ___", ". ___ . .",  "___ ___", "___ .", "___ ___ ___", ". ___ ___ .", "___ ___ . ___", ". ___ .", ". . .", "_", ". . ___", ". . . ___", ". ___ ___", "___ . . ___", "___ . ___ ___", "___ ___ . .", ". ___ ___ ___ ___", ". . ___ ___ ___", ". . . ___ ___", ". . . . ___", ". . . . .", "___ . . . .", "___ ___ . . .", "___ ___ ___ . .", "___ ___ ___ ___ .", "___ ___ ___ ___ ___" };
-	string textToChange = "";
+	const char shkronjat[37] = { ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+								 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+								 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
+	const string morseCode[37] = { "/", ".-", "-...","-.-.", "-..", ".", "..-.", "--.", "....",
+								   "..", ".---", "-.-", ".-..",  "--", "-.", "---", ".--.", "--.-",
+								   ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..",
+								   ".----", "..---", "...--", "....-", ".....", "-....", "--...",
+								   "---..", "----.", "-----" };
+
+	int nrChar;
+	cout << "Sa karaktere do kete teksti qe do ta ktheni ne kod mors: ";
+	cin >> nrChar;
+	cout << endl;
+
+	string textToChange[150];
 	string newText = "";
 
-	cout << "Shkruani kodin qe doni ta ktheni ne text: " << endl;
-	getline(cin, textToChange);
-	transform(textToChange.begin(), textToChange.end(), textToChange.begin(), ::tolower);
-	// ne kete rast funksioni transform i shenderron shkronjat e medha ne shkronja te vogla
+	cout << "Shkruani Morse Code-in qe doni ta shendrroni ne Text: " << endl;
+	for (int i = 0; i < nrChar; i++) {
+		cout << "Kodi mors i shkronjes numer " << i + 1 << ": ";
+		cin >> textToChange[i];
+	}
 
-	for (unsigned int i = 0; i < textToChange.size(); i++) {
+	for (unsigned int i = 0; i < 10; i++) {
 		for (unsigned short j = 0; j < 37; j++) {
-			if (textToChange[i] == shkronjat[j]) {
+			if (textToChange[i] == morseCode[j]) {
 				newText += shkronjat[j];
-				newText += "   ";
+				newText += "";
 				break;
 			}
 		}
 	}
 
-	cout << "Teksti: " << endl << newText;
-	int a;
-	cin >> a;
+	cout << endl << "Mesazhi i dekriptuar: " << newText;
 }
 
 void morseCodeText() {
@@ -81,6 +96,103 @@ void morseCodeText() {
 	}
 }
 
+void caesarEncrypt() {
+	char message[100], ch;
+	int i, key;
+
+	cout << "Shenoni mesazhin qe deshironi te enkriptoni: ";
+	cin.getline(message, 100);
+	cout << "Shenoni numrin e zhvendosjes: ";
+	cin >> key;
+
+	for (i = 0; message[i] != '\0'; ++i) {
+		ch = message[i];
+
+		if (ch >= 'a' && ch <= 'z') {
+			ch = ch + key;
+
+			if (ch > 'z') {
+				ch = ch - 'z' + 'a' - 1;
+			}
+
+			message[i] = ch;
+		}
+		else if (ch >= 'A' && ch <= 'Z') {
+			ch = ch + key;
+
+			if (ch > 'Z') {
+				ch = ch - 'Z' + 'A' - 1;
+			}
+
+			message[i] = ch;
+		}
+	}
+
+	cout << "Mesazhi i enkriptuar: " << message;
+
+}
+
+void caesarDecrypt() {
+	char message[100], ch;
+	int i, key;
+
+	cout << "Shenoni mesazhin qe deshironi ta dekriptoni: ";
+	cin.getline(message, 100);
+	cout << "Shenoni numrin e zhvendosjes: ";
+	cin >> key;
+
+	for (i = 0; message[i] != '\0'; ++i) {
+		ch = message[i];
+
+		if (ch >= 'a' && ch <= 'z') {
+			ch = ch - key;
+
+			if (ch < 'a') {
+				ch = ch + 'z' - 'a' + 1;
+			}
+
+			message[i] = ch;
+		}
+		else if (ch >= 'A' && ch <= 'Z') {
+			ch = ch - key;
+
+			if (ch > 'a') {
+				ch = ch + 'Z' - 'A' + 1;
+			}
+
+			message[i] = ch;
+		}
+	}
+
+	cout << "Mesazhi i dekriptuar: " << message;
+
+
+}
+void caesarText() {
+	string po;
+	string x1 = "Shtypni 1 nese deshironi te enkodoni: tekst ---> caesar code.";
+	string x2 = "Shtypni 2 nese deshironi te dekodoni: caesar code ---> text.";
+
+	cout << endl << "Zgjedheni se cfare enkodimi deshironi qe te beni:  " << endl;
+	cout << x1 << endl;
+	cout << x2 << endl << endl;
+	getline(cin, po);
+	cout << endl;
+
+	if (po == "1")
+	{
+		caesarEncrypt();
+	}
+	else if (po == "2")
+	{
+		caesarDecrypt();
+	}
+	else
+	{
+		cout << "Keni shtypur diqka gabim! " << endl;
+	}
+
+}
 int main() {
 	string bo;
 	string bo1 = "Shtypni 1 per komanden Morse Code.";
@@ -101,10 +213,12 @@ int main() {
 	}
 	else if (bo == "2")
 	{
+
 		cout << endl << endl;
 	}
 	else if (bo == "3")
 	{
+		caesarText();
 		cout << endl << endl;
 	}
 	else
@@ -115,7 +229,7 @@ int main() {
 	return 0;
 }
 
-/* credits: http://theflyingkeyboard.net/c/c-string-to-morse-code/ 
-            https://en.wikipedia.org/wiki/Morse_code      
+/* credits: http://theflyingkeyboard.net/c/c-string-to-morse-code/
+			https://en.wikipedia.org/wiki/Morse_code
 			https://www.youtube.com/watch?v=xsDk5_bktFo
 			*/
