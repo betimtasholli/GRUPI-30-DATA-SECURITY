@@ -57,7 +57,7 @@ void decryptFromMorseCode() {
 		cin >> textToChange[i];
 	}
 
-	for (unsigned int i = 0; i < 10; i++) {
+	for (unsigned int i = 0; i < nrChar; i++) {
 		for (unsigned short j = 0; j < 37; j++) {
 			if (textToChange[i] == morseCode[j]) {
 				newText += shkronjat[j];
