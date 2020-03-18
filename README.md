@@ -35,13 +35,19 @@ e kthen ne pika dhe viza, pra në morse code, ose në cyphertext.
 2. DecryptMorseCode - e merr cyphertextin me pika dhe viza dhe e kthen 
 ne text te lexueshem, pra plaintext.
 
-3. EncryptTapCode - ///
-4. DecryptTapCode - ///
+3. EncryptTapCode - e merr tekstin si plain tekst dhe me ane te tabeles
+se tap code e kthen ne pika per secilin karakter pra ne tap code ose cyphertext.
+
+4. DecryptTapCode - e merr cyphertextin ne forme te pikave dhe sipas tabeles e
+kthen ne tekst te lexueshem.
+
 5. EncryptCaesar - ///
 6. DecryptCaesar - ///
 
 
 Rezultatet e ekzekutimit me nga një shembull për secilën komandë dhe nënkomandë.
+
+MORSE CODE
 
 1. Enkriptimi me Morse code
 Shkruani tekstin qe doni ta ktheni ne morse code: egzon gashi fiek 2020
@@ -56,3 +62,16 @@ Katakteri numer 4: ---
 Karakteri numer 5: -.
 Dekriptimi: egzon
 
+TAP CODE
+
+1. Enkriptimi me tap code
+Shkruani tekstin qe doni ta ktheni ne tap code: albin
+Enkriptimi: ._.  ..._.  ._..  .._....  ..._...
+
+Shkruani nje nga nje secilin karakter qe keni ne tap code:
+Karakteri numer 1: ._.
+Karakteri numer 2: ..._.
+Karakteri numer 3: ._..
+Katakteri numer 4: .._....
+Karakteri numer 5: ..._...
+Dekriptimi: albin
