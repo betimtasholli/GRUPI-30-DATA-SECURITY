@@ -41,8 +41,8 @@ se tap code e kthen ne pika per secilin karakter pra ne tap code ose cyphertext.
 4. DecryptTapCode - e merr cyphertextin ne forme te pikave dhe sipas tabeles e
 kthen ne tekst te lexueshem.
 
-5. EncryptCaesar - ///
-6. DecryptCaesar - ///
+5. EncryptCaesar - e merr tekstin si plaintext dhe cdo shkronje e zhvendose per nje numer te caktuar shkronjash djathtas. 
+6. DecryptCaesar - e merr cyphertextin dhe cdo shkronje e zhvendose per nje numer te caktuar shkronjash majtas.
 
 
 Rezultatet e ekzekutimit me nga një shembull për secilën komandë dhe nënkomandë.
@@ -75,3 +75,16 @@ Karakteri numer 3: ._..
 Katakteri numer 4: .._....
 Karakteri numer 5: ..._...
 Dekriptimi: albin
+
+
+Caesar 
+
+1.Enkriptimi me Caesar
+Shkruani tekstin qe deshironi ta enkriptoni: betim 
+Shkruani numrin e zhvendosjes : 1
+Enkriptimi : cfujn
+
+2.Dekriptimi me Caesar
+Shenoni mesazhin qe deshironi ta dekriptoni: gblvmmufuj j joyijojfsjtf lpnqkvufsjlf
+Shenoni numrin e zhvendosjes: 1
+Dekriptimi: fakullteti i inxhinierise kompjuterike
