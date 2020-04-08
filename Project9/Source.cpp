@@ -145,9 +145,9 @@ void decryptFromTapCode() {
 	string givenText[150];
 	string decryptedText = "";
 
-	cout << "Shkruani Morse Code-in qe doni ta shendrroni ne Text: " << endl;
+	cout << "Shkruani Tap Code-in qe doni ta shendrroni ne Text: " << endl;
 	for (int i = 0; i < nr; i++) {
-		cout << "Kodi mors i shkronjes numer " << i + 1 << ": ";
+		cout << "Tap Code i shkronjes numer " << i + 1 << ": ";
 		cin >> givenText[i];
 	}
 
