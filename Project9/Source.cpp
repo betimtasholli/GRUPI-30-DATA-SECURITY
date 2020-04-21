@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <fstream>
+#include "createUser.cpp"
 using namespace std;
 
 void encryptToMorseCode() {
@@ -292,11 +294,13 @@ int main() {
 	string bo1 = "Shtypni 1 per komanden Morse Code.";
 	string bo2 = "Shtypni 2 per komanden Tap-Code.";
 	string bo3 = "Shtypni 3 per komanden Caesar.";
+	string bo4 = "Shtypni 4 per komanden Create-User.";
 
 	cout << "Zgjedheni komanden qe i'u nevojitet: " << endl;
 	cout << bo1 << endl;
 	cout << bo2 << endl;
-	cout << bo3 << endl << endl;
+	cout << bo3 << endl;
+	cout << bo4 << endl << endl;
 
 	getline(cin, bo);
 
@@ -313,6 +317,11 @@ int main() {
 	else if (bo == "3")
 	{
 		caesarText();
+		cout << endl << endl;
+	}
+	else if (bo == "4")
+	{
+		createUser();
 		cout << endl << endl;
 	}
 	else
