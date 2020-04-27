@@ -2,6 +2,7 @@
 #include <string>
 #include <algorithm>
 #include "createUser.cpp"
+#include "deleteUser.cpp"
 using namespace std;
 
 void encryptToMorseCode() {
@@ -294,12 +295,14 @@ int main() {
 	string bo2 = "Shtypni 2 per komanden Tap-Code.";
 	string bo3 = "Shtypni 3 per komanden Caesar.";
 	string bo4 = "Shtypni 4 per komanden Create-User.";
+	string bo5 = "Shtypni 5 per komanden Delete-User.";
 
 	cout << "Zgjedheni komanden qe i'u nevojitet: " << endl;
 	cout << bo1 << endl;
 	cout << bo2 << endl;
 	cout << bo3 << endl;
-	cout << bo4 << endl << endl;
+	cout << bo4 << endl;
+	cout << bo5 << endl << endl;
 
 	getline(cin, bo);
 
@@ -321,6 +324,11 @@ int main() {
 	else if (bo == "4")
 	{
 		createUser();
+		cout << endl << endl;
+	}
+	else if (bo == "5")
+	{
+		deleteUser();
 		cout << endl << endl;
 	}
 	else
