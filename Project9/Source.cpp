@@ -3,6 +3,7 @@
 #include <algorithm>
 #include "createUser.cpp"
 #include "deleteUser.cpp"
+#include "exportKey.cpp"
 using namespace std;
 
 void encryptToMorseCode() {
@@ -296,13 +297,15 @@ int main() {
 	string bo3 = "Shtypni 3 per komanden Caesar.";
 	string bo4 = "Shtypni 4 per komanden Create-User.";
 	string bo5 = "Shtypni 5 per komanden Delete-User.";
+	string bo6 = "Shtypni 6 per komanden Export-Key.";
 
 	cout << "Zgjedheni komanden qe i'u nevojitet: " << endl;
 	cout << bo1 << endl;
 	cout << bo2 << endl;
 	cout << bo3 << endl;
 	cout << bo4 << endl;
-	cout << bo5 << endl << endl;
+	cout << bo5 << endl;
+	cout << bo6 << endl << endl;
 
 	getline(cin, bo);
 
@@ -331,6 +334,11 @@ int main() {
 		deleteUser();
 		cout << endl << endl;
 	}
+	else if (bo == "6")
+	{
+		exportKey();
+		cout << endl << endl;
+	}
 	else
 	{
 		cout << "Keni shtypur dicka gabim. " << endl << endl;
@@ -339,8 +347,3 @@ int main() {
 	return 0;
 }
 
-/* credits: http://theflyingkeyboard.net/c/c-string-to-morse-code/
-			https://en.wikipedia.org/wiki/Morse_code
-			https://www.youtube.com/watch?v=xsDk5_bktFo
-			https://www.thecrazyprogrammer.com/2016/11/caesar-cipher-c-c-encryption-decryption.html
-			*/
