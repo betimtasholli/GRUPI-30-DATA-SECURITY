@@ -4,6 +4,7 @@
 #include "createUser.cpp"
 #include "deleteUser.cpp"
 #include "exportKey.cpp"
+#include "importKey.cpp"
 using namespace std;
 
 void encryptToMorseCode() {
@@ -298,6 +299,7 @@ int main() {
 	string bo4 = "Shtypni 4 per komanden Create-User.";
 	string bo5 = "Shtypni 5 per komanden Delete-User.";
 	string bo6 = "Shtypni 6 per komanden Export-Key.";
+	string bo7 = "Shtypni 7 per komanden Import-Key.";
 
 	cout << "Zgjedheni komanden qe i'u nevojitet: " << endl;
 	cout << bo1 << endl;
@@ -305,7 +307,8 @@ int main() {
 	cout << bo3 << endl;
 	cout << bo4 << endl;
 	cout << bo5 << endl;
-	cout << bo6 << endl << endl;
+	cout << bo6 << endl;
+	cout << bo7 << endl << endl;
 
 	getline(cin, bo);
 
@@ -337,6 +340,11 @@ int main() {
 	else if (bo == "6")
 	{
 		exportKey();
+		cout << endl << endl;
+	}
+	else if (bo == "7")
+	{
+		importKey();
 		cout << endl << endl;
 	}
 	else

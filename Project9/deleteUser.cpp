@@ -9,7 +9,7 @@ void deleteUser() {
 	cout << endl << "$ds delete user ";
 	getline(cin, name);
 
-	string deletepath = "C:\\Users\\HP\\Desktop\\keys\\" + name + ".pem";
+	string deletepath = "C:\\Users\\ACER\\Desktop\\keys\\" + name + ".pem";
 	int i;
 	char array[60];
 	for (i = 0; i < deletepath.size(); i++) {
@@ -17,7 +17,7 @@ void deleteUser() {
 	}
 	array[i] = '\0';
 
-	string deletepathpub = "C:\\Users\\HP\\Desktop\\keys\\" + name + ".pub.pem";
+	string deletepathpub = "C:\\Users\\ACER\\Desktop\\keys\\" + name + ".pub.pem";
 	int j;
 	char arraypub[60];
 	for (j = 0; j < deletepathpub.size(); j++) {
