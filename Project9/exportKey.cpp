@@ -15,7 +15,7 @@ void exportKey() {
     string arr[3];   // Ketu string-in e kthejme ne string array, per qasje me te lehte.
     int i = 0;
     stringstream ssin(query);
-    while (ssin.good() && i < 4) {
+    while (ssin.good() && i < 3) {
         ssin >> arr[i];
         ++i;
     }
