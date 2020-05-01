@@ -38,7 +38,7 @@ void importKey() {
 
 
     fstream file;
-    file.open("C:\\Users\\ACER\\Desktop\\keys\\" + arr[0] + ".pem");
+    file.open("C:\\Users\\HP\\Desktop\\keys\\" + arr[0] + ".pem");
 
     if (file.is_open()) {   // Ketu e check-iratum nese ky file egziston paraprakisht.
 
@@ -52,7 +52,7 @@ void importKey() {
             ifstream fin;   // Pasi qe public keys qe te gjithe i kam shikuar dhe kane saktesisht 434 bytes.
             fin.open(arr[1]);
             ofstream fout;
-            fout.open("C:\\Users\\ACER\\Desktop\\keys\\" + arr[0] + ".pub.pem");   // File-in bejme import tek dikteriumi i keys.
+            fout.open("C:\\Users\\HP\\Desktop\\keys\\" + arr[0] + ".pub.pem");   // File-in bejme import tek dikteriumi i keys.
             char ch;
             while (!fin.eof()) {
                 fin.get(ch);
@@ -67,7 +67,7 @@ void importKey() {
             ifstream fin;
             fin.open(arr[1]);
             ofstream fout;
-            fout.open("C:\\Users\\ACER\\Desktop\\keys\\" + arr[0] + ".pem");
+            fout.open("C:\\Users\\HP\\Desktop\\keys\\" + arr[0] + ".pem");
             char ch;
             while (!fin.eof()) {
                 fin.get(ch);
@@ -79,16 +79,16 @@ void importKey() {
             cout << "Celesi publik u ruajt ne fajllin 'keys/" + arr[0] + ".pub.pem'" << endl;
 
             generate_key();   // Krijimi i celesit publik, duke e pasur ate private.
-            string generatePubPath = "C:\\Users\\ACER\\Desktop\\keys\\" + arr[0] + ".pub.pem";
+            string generatePubPath = "C:\\Users\\HP\\Desktop\\keys\\" + arr[0] + ".pub.pem";
             int w;   // Ketu me eshte dashur qe nga string te kthej ne char sepse path-et nuk po lejojshin ne string te jepen.
             char alist[60];
             for (w = 0; w < generatePubPath.size(); w++) {
                 alist[w] = generatePubPath[w];
             }
             alist[w] = '\0';
-            char oldpath[] = "C:\\Users\\ACER\\Desktop\\keys\\public.pem";
+            char oldpath[] = "C:\\Users\\HP\\Desktop\\keys\\public.pem";
             rename(oldpath, alist);   // Ketu e kam bere rename file, per te iu pershtatur kerkesave nga projekti.
-            remove("C:\\Users\\ACER\\Desktop\\keys\\private.pem");
+            remove("C:\\Users\\HP\\Desktop\\keys\\private.pem");
         }
 
         else if (fileSize(pathchar) > 8000) {
