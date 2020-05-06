@@ -8,7 +8,7 @@
 #include "deleteUser.cpp"
 #include "exportKey.cpp"
 #include "importKey.cpp"
-#include "writeMessage.cpp"
+#include "writeMessage&readMessage.cpp"
 
 using namespace std;
 
@@ -18,7 +18,8 @@ int main() {
 		"Shtypni 1 per komanden Morse Code.\nShtypni 2 per komanden Tap-Code.\n"
 		"Shtypni 3 per komanden Caesar.\nShtypni 4 per komanden Create-User.\n"
 		"Shtypni 5 per komanden Delete-User.\nShtypni 6 per komanden Export-Key.\n"
-		"Shtypni 7 per komanden Import-Key.\nShtypni 8 per komanden Write-Message.\n\n";
+		"Shtypni 7 per komanden Import-Key.\nShtypni 8 per komanden Write-Message.\n"
+		"Shtypni 9 per komanden Read-Message\n\n";
 			
 
 	string komanda;
@@ -54,6 +55,10 @@ int main() {
 	}
 	else if (komanda == "8"){
 		writeMessage();
+		cout << endl << endl;
+	}
+	else if (komanda == "9") {
+		readMessage();
 		cout << endl << endl;
 	}
 	else{
