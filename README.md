@@ -145,8 +145,50 @@ write-message -
 $ ds write-message egzon takimi_mbahet_ne_ora_2_mos_eja
 ZWd6b24=.MTIzNDEyMzQ=.MDAwMDExMTE=.dGFraW1pX21iYWhldF9uZV9vcmFfMl9tb3NfZWph.
 
-read-message -
+read-message -  
 
-$ ds read-message ZWd6b24=.MTIzNDEyMzQ=.MDAwMDExMTE=.dGFraW1pX21iYWhldF9uZV9vcmFfMl9tb3NfZWph.
-Marresi: egzon
-Mesazhi: takimi_mbahet_ne_ora_2_mos_eja
+$ ds read-message ZWd6b24=.MTIzNDEyMzQ=.MDAwMDExMTE=.dGFraW1pX21iYWhldF9uZV9vcmFfMl9tb3NfZWph.  
+Marresi: egzon  
+Mesazhi: takimi_mbahet_ne_ora_2_mos_eja  
+
+
+===========================================================================
+
+Credits:
+
+Base64
+https://renenyffenegger.ch/notes/development/Base64/Encoding-and-decoding-base-64-with-cpp/
+
+OpenSSL
+https://www.openssl.org/
+
+Fstream
+http://www.cplusplus.com/reference/fstream/fstream/
+
+Gjetja e file-size
+https://stackoverflow.com/questions/5840148/how-can-i-get-a-files-size-in-c/40879144#40879144
+
+String to array
+https://stackoverflow.com/questions/17956939/array-size-and-split-of-string
+
+Sstream
+http://www.cplusplus.com/reference/sstream/
+
+Gjenerimi i RSA keys
+https://stackoverflow.com/questions/38582334/use-openssl-in-cbuilder?noredirect=1&lq=1
+
+Ofstream
+http://www.cplusplus.com/reference/fstream/ofstream/
+
+Ifstream
+http://www.cplusplus.com/reference/fstream/ifstream/
+
+Caesar code
+http://practicalcryptography.com/ciphers/caesar-cipher/
+https://www.tutorialspoint.com/cplusplus-program-to-implement-caesar-cypher
+
+Tap code
+https://en.wikipedia.org/wiki/Tap_code
+
+Morse code
+https://www.geeksforgeeks.org/morse-code-implementation/
