@@ -2,6 +2,8 @@
 
 ===========================================================================
 
+                                         FAZA I
+
 Të dhëna mbi programin
 
 Ky program të cilin e kemi koduar në gjuhën programuese C++, sherben per enkriptimin dhe dekriptimin e të dhënave në tri mënyra të ndryshme:
@@ -79,9 +81,9 @@ Shenoni mesazhin qe deshironi ta dekriptoni: gblvmmufuj j joyijojfsjtf lpnqkvufs
 Shenoni numrin e zhvendosjes: 1
 Dekriptimi: fakullteti i inxhinierise kompjuterike
 
-==================================================================================
+===========================================================================
 
-                                                    FAZA II
+                                         FAZA II
 
 Ne kuader te kesaj faze, programin e shkruar e kemi zgjeruar duke i'a shtuar edhe disa komanda te tjera qe perfshijne nje komande per 
 te krijuar nje perdorues, nje komande per te fshire nje perdorues, nje komande per te eksportuar nje qeles, nje komande per te importuar
@@ -96,7 +98,7 @@ Komandat e shtuara jane:
 5. write-message
 6. read-message
 
-==================================================================================
+===========================================================================
 
 Pershkrimi i komandave
 
@@ -112,7 +114,7 @@ Pershkrimi i komandave
 
 6. Komanda read-message e dekripton dhe e shfaq në console mesazhin e enkriptuar ose e ruan ne nje path te caktuar.
 
-=========================================================================
+===========================================================================
 
 Rezultatet e ekzekutimit me nga një shembull për secilën komandë.
 
