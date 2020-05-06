@@ -42,44 +42,44 @@ Rezultatet e ekzekutimit me nga një shembull për secilën komandë dhe nënkom
 
 MORSE CODE -
 
-1. Enkriptimi me Morse code
-Shkruani tekstin qe doni ta ktheni ne morse code: egzon gashi fiek 2020
-Enkriptimi: . --. --.. --- -. / --. .- ... .... .. / ..-. .. . -.- / ..--- ----- ..--- ----- 
+1. Enkriptimi me Morse code  
+Shkruani tekstin qe doni ta ktheni ne morse code: egzon gashi fiek 2020  
+Enkriptimi: . --. --.. --- -. / --. .- ... .... .. / ..-. .. . -.- / ..--- ----- ..--- -----   
 
-2. Dekriptimi me Morse code
-Shkruani nje nga nje secilin karakter qe keni ne morse code:
-Karakteri numer 1: .
-Karakteri numer 2: --.
-Karakteri numer 3: --..
-Katakteri numer 4: ---
-Karakteri numer 5: -.
-Dekriptimi: egzon
+2. Dekriptimi me Morse code  
+Shkruani nje nga nje secilin karakter qe keni ne morse code:  
+Karakteri numer 1: .  
+Karakteri numer 2: --.  
+Karakteri numer 3: --..  
+Katakteri numer 4: ---  
+Karakteri numer 5: -.  
+Dekriptimi: egzon  
 
-TAP CODE -
+TAP CODE -  
 
-1. Enkriptimi me tap code
-Shkruani tekstin qe doni ta ktheni ne tap code: albin
-Enkriptimi: ._.  ..._.  ._..  .._....  ..._...
+1. Enkriptimi me tap code  
+Shkruani tekstin qe doni ta ktheni ne tap code: albin  
+Enkriptimi: ._.  ..._.  ._..  .._....  ..._...  
 
-2. Shkruani nje nga nje secilin karakter qe keni ne tap code:
-Karakteri numer 1: ._.
-Karakteri numer 2: ..._.
-Karakteri numer 3: ._..
-Katakteri numer 4: .._....
-Karakteri numer 5: ..._...
-Dekriptimi: albin
-
-CAESAR -
-
-1. Enkriptimi me Caesar
-Shkruani tekstin qe deshironi ta enkriptoni: betim 
-Shkruani numrin e zhvendosjes : 1
-Enkriptimi : cfujn
-
-2. Dekriptimi me Caesar
-Shenoni mesazhin qe deshironi ta dekriptoni: gblvmmufuj j joyijojfsjtf lpnqkvufsjlf
-Shenoni numrin e zhvendosjes: 1
-Dekriptimi: fakullteti i inxhinierise kompjuterike
+2. Shkruani nje nga nje secilin karakter qe keni ne tap code:  
+Karakteri numer 1: ._.  
+Karakteri numer 2: ..._.  
+Karakteri numer 3: ._..  
+Katakteri numer 4: .._....  
+Karakteri numer 5: ..._...  
+Dekriptimi: albin  
+  
+CAESAR -  
+  
+1. Enkriptimi me Caesar  
+Shkruani tekstin qe deshironi ta enkriptoni: betim   
+Shkruani numrin e zhvendosjes : 1  
+Enkriptimi : cfujn  
+  
+2. Dekriptimi me Caesar  
+Shenoni mesazhin qe deshironi ta dekriptoni: gblvmmufuj j joyijojfsjtf lpnqkvufsjlf  
+Shenoni numrin e zhvendosjes: 1  
+Dekriptimi: fakullteti i inxhinierise kompjuterike  
 
 ===========================================================================
 
@@ -116,34 +116,34 @@ Pershkrimi i komandave
 
 ===========================================================================
 
-Rezultatet e ekzekutimit me nga një shembull për secilën komandë.
+Rezultatet e ekzekutimit me nga një shembull për secilën komandë.  
 
-create-user -
+create-user -  
 
-$ds create user albin
-Eshte krijuar celesi privat 'keys/albin.pem'.
-Eshte krijuar celesi publik 'keys/albin.pub.pem.
+$ds create user albin  
+Eshte krijuar celesi privat 'keys/albin.pem'.  
+Eshte krijuar celesi publik 'keys/albin.pub.pem.  
 
-delete-user -
+delete-user -  
 
-$ds delete user albin
-Eshte fshire celesi privat 'keys/albin.pem'.
-Eshte fshire celesi publik 'keys/albin.pub.pem'.
+$ds delete user albin  
+Eshte fshire celesi privat 'keys/albin.pem'.  
+Eshte fshire celesi publik 'keys/albin.pub.pem'.  
 
-export-key -
+export-key -  
 
-$ds export key public albin C:\\Users\\HP\\Desktop\\albin.pem
-Celesi publik u ruajt ne fajllin 'C:\\Users\\HP\\Desktop\\albin.pem'.
+$ds export key public albin C:\\Users\\HP\\Desktop\\albin.pem  
+Celesi publik u ruajt ne fajllin 'C:\\Users\\HP\\Desktop\\albin.pem'.  
 
-import-key - 
+import-key -   
 
-$ ds import-key albin C:\\Users\\HP\\Desktop\\somekey.pub.pem
-Celesi publik u ruajt ne fajllin 'C:\\Users\\HP\\Desktop\\keys\\albin.pub.pem'.
+$ ds import-key albin C:\\Users\\HP\\Desktop\\somekey.pub.pem  
+Celesi publik u ruajt ne fajllin 'C:\\Users\\HP\\Desktop\\keys\\albin.pub.pem'.  
 
-write-message -
+write-message -  
 
-$ ds write-message egzon takimi_mbahet_ne_ora_2_mos_eja
-ZWd6b24=.MTIzNDEyMzQ=.MDAwMDExMTE=.dGFraW1pX21iYWhldF9uZV9vcmFfMl9tb3NfZWph.
+$ ds write-message egzon takimi_mbahet_ne_ora_2_mos_eja  
+ZWd6b24=.MTIzNDEyMzQ=.MDAwMDExMTE=.dGFraW1pX21iYWhldF9uZV9vcmFfMl9tb3NfZWph.  
 
 read-message -  
 
