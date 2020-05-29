@@ -25,6 +25,14 @@ void deleteUser() {
 	}
 	arraypub[j] = '\0';
 
+	string deletepathpassword = "C:\\Users\\HP\\Desktop\\keys\\passwords\\" + name + "-password.txt";
+	int k;
+	char arraypassword[60];
+	for (k = 0; k < deletepathpassword.size(); k++) {
+		arraypassword[k] = deletepathpassword[k];
+	}
+	arraypassword[k] = '\0';
+
 
 	int status;   // Fshirja e Celsave privat.
 	status = remove(array);
@@ -49,4 +57,14 @@ void deleteUser() {
 		cout << "Gabim: Celesi publik '" << name << "' nuk ekziston.\n";
 	}
 
+	int statuspassword;   // Fshirja e Celsave publik.
+	statuspassword = remove(arraypassword);
+	if (statuspassword == 0)
+	{
+		cout << "Eshte larguar passwordi 'keys/passwords/" << name << "-password.txt'\n";
+	}
+	else
+	{
+		cout << "Gabim: Passwordi '" << name << "' nuk ekziston.\n";
+	}
 }
